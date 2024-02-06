@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #efeee7;
+
+}
+
+/* Fieldset and legend */
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0.25em;
+    color: #999;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label {
+    margin-top: 0;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* Input and textarea */
+input {
+    padding: 0.5em;
+    border: solid 1px #999;
+    border-radius: 6px;
+}
+
+input[type="email"], input[type="text"] {
+    width: 15em;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: 0.5em;
+    border: solid 1px #999;
+    border-radius: 6px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+
+}
+
+.h-captcha {
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 15em;
+}
+
+/* Checkboxes */
+.checks {
+    margin-bottom: 1em;
+}
+
+input[type=checkbox] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Submit button */
+input[type="submit"] {
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color:#333333;
+    color: #fff;
+    font-size: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+/* Large screen rules */
+@media screen and (min-width: 430px) {
+    legend {
+        font-size: 1.75em;
+    }
+    
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .checks label {
+    display: inline-block;
+    padding-top: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0;
+    }
+}

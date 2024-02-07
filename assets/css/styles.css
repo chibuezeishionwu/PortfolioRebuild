@@ -136,7 +136,39 @@ a {
   grid-gap: 0.5em;
 }
 
-.projects-images-container > div {
+.projects-images-container > div:nth-child(1) {
+  border: 3px solid var(--blue);
+  height: 350px;
+  background: url(../images/console-screenshot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-images-container > div:nth-child(2) {
+  border: 3px solid var(--blue);
+  height: 350px;
+  background: url(../images/chocolate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-images-container > div:nth-child(3) {
+  border: 3px solid var(--blue);
+  height: 350px;
+  background: url(../images/contact-us-form.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-images-container > div:nth-child(4) {
+  border: 3px solid var(--blue);
+  height: 350px;
+  background: url(../images/pawel-czerwinski-ymzs15Afjhg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-images-container > div:nth-child(5) {
   border: 3px solid var(--blue);
   height: 350px;
   background: url(../images/pawel-czerwinski-ymzs15Afjhg-unsplash.jpg);
@@ -169,6 +201,14 @@ a {
   bottom: 5%;
   left: 0;
   color: #F7FFF7;
+}
+
+.projects-images-subdiv {
+  cursor: pointer;
+}
+
+.projects-images-subdiv:hover {
+  opacity: 0.8;
 }
 
 

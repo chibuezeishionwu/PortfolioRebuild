@@ -13,9 +13,9 @@ const upperCasedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // Add event listener to generate button
 document.getElementById('generate').addEventListener('click', function() {
   // Ask user for the length of password
-  let length = prompt("How many characters will your password be? Enter a number between 8 and 24");
-    if (isNaN(length) || length < 8 || length > 24) {
-        alert("Please enter a valid password length between 8 and 24.");
+  let length = prompt("How many characters will your password be? Enter a number between 8 and 128");
+    if (isNaN(length) || length < 8 || length > 128) {
+        alert("Please enter a valid password length between 8 and 128.");
         return;
   }
   // Ask user to specify other preferences
@@ -46,4 +46,10 @@ function generatePassword(length, includeUpperCase, includeLowerCase, includeNum
     password += allowedChars[randomIndex];
     }
   return password;
+}
+
+function copyPassword() {
+  password.select();
+  document.execCommand("copy")
+  alert("Copied to clipboard");
 }

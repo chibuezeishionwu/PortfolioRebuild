@@ -134,7 +134,7 @@ a {
 .projects-images-container > div:nth-child(1) {
   border: 3px solid var(--blue);
   height: 350px;
-  background: url(../images/password-generator-screenshot.png);
+  background: url(../images/quiz.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -142,7 +142,7 @@ a {
 .projects-images-container > div:nth-child(2) {
   border: 3px solid var(--blue);
   height: 350px;
-  background: url(../images/chocolate.jpg);
+  background: url(../images/password-generator-screenshot.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -166,7 +166,7 @@ a {
 .projects-images-container > div:nth-child(5) {
   border: 3px solid var(--blue);
   height: 350px;
-  background: url(../images/pawel-czerwinski-ymzs15Afjhg-unsplash.jpg);
+  background: url(../images/chocolate.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

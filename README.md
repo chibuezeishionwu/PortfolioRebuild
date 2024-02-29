@@ -1,6 +1,6 @@
 # Portfolio Rebuild - The Repository
 
-This repository is where most of my projects for the DTTP Web Development course is stored. I will update the repository often with new projects as they come.
+This repository is where most of my projects for the DTTP Web Development course are stored. I will update the repository often with new projects as they come.
 
 ## Projects
 
@@ -29,7 +29,7 @@ Here is a screenshot of my portfolio page:
 
 In this project, I created a simple task board application that allows a team to manage project tasks by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. Below are some of the techniques used in this project:
 
-* Third-Party APIs such as:
+* Third-party APIs such as:
     * jQuery
     * Day.js library
     * Bootstrap
@@ -43,11 +43,11 @@ Here is a preview of the task board:
     <img alt="task board gif" src="./assets/images/task-board.gif" width="50%" height="50%">
 </p>
 
-[Follow this link to view the task board.](./assets/task-board/task-board.html)
+[Follow this link to view the task board.](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/task-board/task-board.html)
 
 ### Web APIs - Code Quiz
 
-In this project, I used advanced JavaScript techniques to build a timed quiz that saves the highscore after the user is done with the quiz. Some of the JavaScript techniques used included:
+In this project, I used advanced JavaScript techniques to build a timed quiz that saves the high score after the user has completed the quiz. Some of the JavaScript techniques used included:
 
 * Timeouts and Intervals
 * Managing the DOM via the JS Web API
@@ -61,11 +61,11 @@ Here is a preview of the quiz:
     <img alt="gif of the quiz" src="./assets/images/code-quiz.gif" width="50%" height="50%">
 </p>
 
-[Take the quiz if you're up for it!](./assets/code-quiz/code-quiz.html)
+[Take the quiz if you're up for it!](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/code-quiz/code-quiz.html)
 
 ### Password Generator
 
-In this project, I used advanced JavaScript techniques to create a random password generator that takes users preferences and generates a password based on those preferences. The password generator also includes a functional copy button. Below are some of the JavaScript techniques used in this project:
+In this project, I used advanced JavaScript techniques to create a random password generator that takes users' preferences and generates a password based on those preferences. The password generator also includes a functional copy button. Below are some of the JavaScript techniques used in this project:
 
 * JavaScript Arrays
 * JavaScript Loops
@@ -80,7 +80,7 @@ Here is a screenshot of the password generator:
     <img alt="password generator screenshot" src="./assets/images/password-generator-screenshot.png" width="50%" height="50%">
 </p>
 
-[Use this link if you need a new password or ten!](./assets/password-generator/password-generator.html)
+[Use this link if you need a new password or ten!](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/password-generator/password-generator.html)
 
 
 ## Technologies Used

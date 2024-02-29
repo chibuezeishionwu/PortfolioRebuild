@@ -25,6 +25,26 @@ Here is a screenshot of my portfolio page:
 
 [You can also visit GitHub Pages to view a live version of my portfolio page.](https://chibuezeishionwu.github.io/PortfolioRebuild/)
 
+### Task Board
+
+In this project, I created a simple task board application that allows a team to manage project tasks by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. Below are some of the techniques used in this project:
+
+* Third-Party APIs such as:
+    * jQuery
+    * Day.js library
+    * Bootstrap
+* Creating and using functions
+* Accessing the local storage
+* Creating and using event listeners
+
+Here is a preview of the task board:
+
+<p>
+    <img alt="task board gif" src="./assets/images/task-board.gif" width="50%" height="50%">
+</p>
+
+[Follow this link to view the task board.](./assets/task-board/task-board.html)
+
 ### Web APIs - Code Quiz
 
 In this project, I used advanced JavaScript techniques to build a timed quiz that saves the highscore after the user is done with the quiz. Some of the JavaScript techniques used included:

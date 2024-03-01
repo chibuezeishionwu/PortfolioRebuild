@@ -1,129 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eze Ishionwu's Portfolio Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/gif" href="./assets/images/e-i-favicon.jpeg">
-  </head>
-  <body>
-    <main>
-      <header>
-      <!-- ***********************  NAVBAR  ******************************** -->
-        <div class="navbar">
-          <a href="#about-me">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact-me">Contact</a>
-          <a href="./assets/resume-directory/Eze_Ishionwu_Resume.pdf" target="_blank">Resume</a>
-        </div>
-      </header>
+</head>
 
-      <!-- ***********************  BIOIMAGE  ******************************* -->
-      <section class="image-section">
-        <div class="bioimage-container-wrap">
-          <div class="bioimage-text-div">
-            <h1>Eze Ishionwu</h1>
-            <h2>Web Developer</h2>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about-me">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact-me">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./assets/resume-directory/Eze_Ishionwu_Resume.pdf"
+                          target="_blank">Resume</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 text-md-start text-center">
+                  <h1 class="text-white">Eze<br>Ishionwu</h1>
+                  <h5 class="text-white">Web Developer</h5>
+              </div>
+              <div class="col-md-6">
+                  <img src="./assets/images/Biopic.jpg" alt="Hero Image" class="img-fluid rounded">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="about-me-section py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-title text-white mb-4">About Me</h2>
+                  <p class="text-white">Hello, I'm Eze (Chibueze) Ishionwu, a passionate web developer based in Toronto, Canada. I have
+                      a passion for creating responsive and user-friendly web applications.</p>
+                  <p class="text-white">I am currently looking for opportunities to expand my skills and experience.</p>
+                  <p class="text-white">I hold a Master's degree in Microbiology and Infection from the University of
+                    Birmingham and a Bachelor's degree in Microbiology from the University of Liverpool.</p>
+                  <p class="text-white">Feel free to explore my work below.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- ***********************  PROJECTS / PORTFOLIO  ********************* -->
+  <section id="projects" class="projects-section py-5">
+    <div class="container">
+      <div class="projects-row row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-title text-white mb-4">Featured Projects</h2>
+        </div>
+      </div>
+      </div>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-5 mb-4">
+          <div id="first-image" class="hover card">
+            <img src="./assets/images/quiz.jpg" class="card-img-top" alt="Timed Quiz">
+            <div class="card-body">
+              <h2 class="card-title">Timed Quiz</h2>
+              <p class="card-text">HTML CSS JS</p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- ***********************  ABOUT ME  ******************************* -->
-      <section id="about-me" class="about-me">
-        <div class="about-me-container wrapper">
-          <div class="about-me-header-div">
-            <h1>About Me</h1>
-          </div>
-
-          <div class="about-me-text">
-            <p>Hello, my name is Chibueze (Eze for short) and I am a web developer. Welcome to my biopage.</p>
-            <!-- ******  EDUCATION & CERTIFICATIONS ********** -->
-            <section class="education">
-              <h2>Education</h2>
-              <!-- School 1 -->
-                <h3>University of Birmingham - Birmingham, United Kingdom</h3>
-                <p>Master of Science with Merit, 2016</p>
-                <p>Microbiology and Infection</p>
-              <!-- School 2 -->
-                <h3>University of Liverpool - Liverpool, United Kingdom</h3>
-                <p>Bachelor of Science with Honours, 2013</p>
-                <p>Microbiology</p>
-            </section>
-          </div>
-        </div>
-      </section>
-
-     
-
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section id="projects" class="projects">
-        <div class="projects-container wrapper">
-          <div class="projects-headings-container">
-            <h1>Featured<br>Projects</h1>
-          </div>
-
-          <div class="projects-images-container">
-            <div id="first-image" class="projects-images-subdiv">
-              <div class="styled-project-text"><h2>Timed Quiz</h2></div>
-            </div>
-            <div id="second-image" class="projects-images-subdiv">
-              <div class="styled-project-text"><h2>Password Generator</h2></div>
-            </div>
-            <div id="third-image" class="projects-images-subdiv">
-              <div class="styled-project-text"><h2>Contact Us Form</h2></div>
-            </div>
-            <div id="fourth-image" class="projects-images-subdiv">
-              <div class="styled-project-text"><h2>Finances Calculator</h2></div>
-            </div>
-            <div id="fifth-image" class="projects-images-subdiv">
-              <div class="styled-project-text"><h2>Chocolate</h2></div>
+        <div class="col-md-5 mb-4">
+          <div id="second-image" class="hover card">
+            <img src="./assets/images/password-generator.jpg" class="card-img-top" alt="Password Generator">
+            <div class="card-body">
+              <h2 class="card-title">Password Generator</h2>
+              <p class="card-text">HTML CSS JS</p>
             </div>
           </div>
         </div>
-
-        <script>
-          document.getElementById("first-image").addEventListener("click", function() {
-            window.open("./assets/code-quiz/code-quiz.html", "_blank");
-          });
-
-          document.getElementById("second-image").addEventListener("click", function() {
-            window.open("./assets/password-generator/password-generator.html", "_blank");
-          });
-
-          document.getElementById("third-image").addEventListener("click", function() {
-            window.open("./assets/support/contact-us-form.html", "_blank");
-          });
-
-          document.getElementById("fourth-image").addEventListener("click", function() {
-            window.open("https://chibuezeishionwu.github.io/Console-Finances/", "_blank");
-          });
-
-          document.getElementById("fifth-image").addEventListener("click", function() {
-            window.open("./assets/support/chocolate.html", "_blank");
-          });
-        </script>
-
-      </section>
-
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer id="contact-me">
-        <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
-
-          <!-- Social media and contact links. Add or remove any networks. -->
-          <ul class="contact-list">
-            <li><a href="./assets/support/contact-us-form.html" target="_blank">Contact Eze</a></li>
-            <li><a href="https://github.com/chibuezeishionwu" target="_blank">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/chibuezeishionwu/" target="_blank">LinkedIn</a></li>
-            <li><a href="#">Facebook</a></li>
-          </ul>
+        <div class="col-md-5 mb-4">
+          <div id="third-image" class="hover card">
+            <img src="./assets/images/task-board.jpg" class="card-img-top" alt="Task Board">
+            <div class="card-body">
+              <h2 class="card-title">Task Board</h2>
+              <p class="card-text">HTML BOOTSTRAP JQUERY</p>
+            </div>
+          </div>
         </div>
-      </footer>
-    </main>
-  </body>
+        <div class="col-md-5 mb-4">
+          <div id="fourth-image" class="hover card">
+            <img src="./assets/images/finances-calculator.jpg" class="card-img-top" alt="Finances Calculator">
+            <div class="card-body">
+              <h2 class="card-title">Finances Calculator</h2>
+              <p class="card-text">HTML CSS JS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-me" class="contact-section py-5">
+      <div class="container">
+        <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-title text-white mb-4">Let's Connect</h2>
+                  <ul class="contact-list">
+                    <li><a href="./assets/support/contact-us-form.html" target="_blank">Contact Eze</a></li>
+                    <li><a href="https://github.com/chibuezeishionwu" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/chibuezeishionwu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=1541569792" target="_blank">Facebook</a></li>
+                  </ul>
+              </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section py-4">
+      <div class="container text-center">
+          <p class="text-white mb-0">© 2024 Eze Ishionwu. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
 </html>

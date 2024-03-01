@@ -1,33 +1,41 @@
 # Portfolio Rebuild - The Repository
 
-This repository is where most of my projects for the DTTP Web Development course are stored. I will update the repository often with new projects as they come.
+This is a repository for my projects in the DTTP Web Development course. I will update the repository regularly.
 
 ## Projects
 
-The projects are also accessible via hyperlinks in the projects section of the portfolio page.
+The projects listed here are also accessible via hyperlinks in the projects section of the portfolio page.
 
 ### Portfolio Rebuild
 
-This was my main portfolio page project. In this project, I showed advanced CSS styling by implementing CSS in various ways including:
+This is my portfolio page project. In this iteration of the project, I showed my progress as a web developer by implementing: 
 
-* Mobile Responsiveness (Media Queries),
-* CSS Positioning and Layout,
-* Utilization of CSS Grid and
-* CSS Variables. 
+* HTML
+* CSS 
+* JavaScript
+* JQuery
+* Web APIs and 
+* External APIs
 
-The inclusion of this basic README.md document was also a requirement.
+To acheive a professional look that shows:
+
+* Responsiveness
+* Advanced CSS Positioning and Layout
+* Polished appearance
+* Interactivity and
+* Previous projects
 
 Here is a screenshot of my portfolio page:
 
 <p>
-    <img alt="screenshot of my portfolio page." src="./assets/images/porfolio-screenshot.png" width="50%" height="50%">
+    <img alt="screenshot of my portfolio page." src="./assets/images/portfolio-screenshot.png" width="50%" height="50%">
 </p>
 
-[You can also visit GitHub Pages to view a live version of my portfolio page.](https://chibuezeishionwu.github.io/PortfolioRebuild/)
+[Visit GitHub Pages to view a live version of my portfolio page.](https://chibuezeishionwu.github.io/PortfolioRebuild/)
 
 ### Task Board
 
-In this project, I created a simple task board application that allows a team to manage project tasks by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. Below are some of the techniques used in this project:
+In this project, I created a simple task board application that allows a team to manage project tasks by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by JQuery. Below are some of the techniques used in this project:
 
 * Third-party APIs such as:
     * jQuery
@@ -85,7 +93,7 @@ Here is a screenshot of the password generator:
 
 ## Technologies Used
 
-All the code in this repository was edited using Microsoft's Visual Studio Code Editor (VS Code).
+All the code in this repository was edited using Microsoft's Visual Studio Code Editor (VS Code). The GitHub repository was managed using Apple MacBook's Terminal Application
 
 ## License
 

@@ -28,7 +28,7 @@ To acheive a professional look that shows:
 Here is a screenshot of my portfolio page:
 
 <p>
-    <img alt="screenshot of my portfolio page." src="./assets/images/portfolio-screenshot.png" width="50%" height="50%">
+    <img alt="screenshot of my portfolio page." src="./assets/images/portfolio-screenshot.png" width="75%" height="75%">
 </p>
 
 [Visit GitHub Pages to view a live version of my portfolio page.](https://chibuezeishionwu.github.io/PortfolioRebuild/)
@@ -48,7 +48,7 @@ In this project, I created a simple task board application that allows a team to
 Here is a preview of the task board:
 
 <p>
-    <img alt="task board gif" src="./assets/images/task-board.gif" width="50%" height="50%">
+    <img alt="task board gif" src="./assets/images/task-board.gif" width="75%" height="75%">
 </p>
 
 [Follow this link to view the task board.](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/task-board/task-board.html)
@@ -66,7 +66,7 @@ In this project, I used advanced JavaScript techniques to build a timed quiz tha
 Here is a preview of the quiz:
 
 <p>
-    <img alt="gif of the quiz" src="./assets/images/code-quiz.gif" width="50%" height="50%">
+    <img alt="gif of the quiz" src="./assets/images/code-quiz.gif" width="75%" height="75%">
 </p>
 
 [Take the quiz if you're up for it!](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/code-quiz/code-quiz.html)
@@ -85,7 +85,7 @@ In this project, I used advanced JavaScript techniques to create a random passwo
 Here is a screenshot of the password generator:
 
 <p>
-    <img alt="password generator screenshot" src="./assets/images/password-generator-screenshot.png" width="50%" height="50%">
+    <img alt="password generator screenshot" src="./assets/images/password-generator-screenshot.png" width="75%" height="75%">
 </p>
 
 [Use this link if you need a new password or ten!](https://chibuezeishionwu.github.io/PortfolioRebuild/assets/password-generator/password-generator.html)

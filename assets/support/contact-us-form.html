@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us Form</title>
         <link rel="stylesheet" href="../css/stylesheet-for-contacting-us.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- <script src="../js/index.js"></script> -->
     </head>
     <body>
         <section>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
-                <input type="hidden" name="redirect" value="https://chibuezeishionwu.github.io/MyFirstRepository/thank-you.html">
+                <input type="hidden" name="redirect" value="https://chibuezeishionwu.github.io/PortfolioRebuild/">
 
                 <fieldset>
                     <legend>Contact Eze</legend>
@@ -39,5 +41,13 @@
                 </fieldset>
             </form>
         </section>
+
+        <script>
+            $(document).ready(function() {
+                $('#contactForm').on('submit', function(e) {
+                    alert("Thank you for contacting Eze, he'll be in touch soon.");
+                });
+            });
+        </script>
     </body>
 </html>

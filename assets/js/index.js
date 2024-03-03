@@ -15,4 +15,3 @@
       window.open("https://chibuezeishionwu.github.io/Console-Finances/", "_blank");
     });
   });
-  

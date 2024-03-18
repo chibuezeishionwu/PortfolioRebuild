@@ -38,44 +38,50 @@ function startQuiz() {
 
 function getQuestion() {
   // get current question object from array
-  const currentQuestion = questions[currentQuestionIndex];
+  var currentQuestion = questions[currentQuestionIndex];
+
   // update title with current question
-  document.getElementById('question-title').textContent = currentQuestion.title;
+  var titleEl = document.getElementById('question-title');
+  titleEl.textContent = currentQuestion.title;
+
   // clear out any old question choices
   choicesEl.innerHTML = '';
-  // Clear previous feedback
-  // document.getElementById('feedback').textContent = '';
-  // loop over the choices for each question
-  currentQuestion.choices.forEach(choice => {
-    // create a new button for each choice, setting the label and value for the button
-    const button = document.createElement('button');
-    button.textContent = choice;
-    button.addEventListener('click', () => questionClick(choice));  
-    // display the choice button on the page
-    choicesEl.appendChild(button);
-  });
+
+  // loop over choices
+  for (var i = 0; i < currentQuestion.choices.length; i++) {
+    // create new button for each choice
+    var choice = currentQuestion.choices[i];
+    var choiceNode = document.createElement('button');
+    choiceNode.setAttribute('class', 'choice');
+    choiceNode.setAttribute('value', choice);
+
+    choiceNode.textContent = i + 1 + '. ' + choice;
+
+    // display on the page
+    choicesEl.appendChild(choiceNode);
+  }
 }
 
 function questionClick(event) {
-  // identify the targeted button that was clicked on
-  const clickedButton = event.target;
+  var buttonEl = event.target;
+
   // if the clicked element is not a choice button, do nothing.
-  if (clickedButton.tagName !== 'BUTTON') {
+  if (!buttonEl.matches('.choice')) {
     return;
   }
+
   // check if user guessed wrong
-  // if () {
-  // if they got the answer wrong, penalize time by subtracting 15 seconds from the timer
-  // recall the timer is the score they get at the end
-  if (clickedButton.textContent !== questions[currentQuestionIndex].answer) {
+  if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+    // penalize time
     time -= 15;
-  // if they run out of time (i.e., time is less than zero) set time to zero so we can end quiz
+
     if (time < 0) {
       time = 0;
     }
-  // display new time on page
-    displayTime();
-  // play "wrong" sound effect
+
+    // display new time on page
+    timeEl.textContent = time;
+    // play "wrong" sound effect
     sfxWrong.play();
   // display "wrong" feedback on page
     feedbackEl.textContent = 'Wrong!';

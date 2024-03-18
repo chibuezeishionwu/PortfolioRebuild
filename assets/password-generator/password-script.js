@@ -32,24 +32,72 @@ document.getElementById('generate').addEventListener('click', function() {
 
 });
 
-// Call password function to get a random element from an array
 function generatePassword(length, includeUpperCase, includeLowerCase, includeNumbers, includeSpecialChars) {
-  let allowedChars = '';
-  if (includeUpperCase) allowedChars += upperCasedCharacters;
-  if (includeLowerCase) allowedChars += lowerCasedCharacters;
-  if (includeNumbers) allowedChars += numericCharacters;
-  if (includeSpecialChars) allowedChars += specialCharacters;
-
   let password = '';
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * allowedChars.length);
-    password += allowedChars[randomIndex];
-    }
+
+  // Arrays to track which character sets have been used
+  let usedUpperCase = false;
+  let usedLowerCase = false;
+  let usedNumbers = false;
+  let usedSpecialChars = false;
+
+  // Determine which character sets to include
+  const allowedChars = [];
+  if (includeUpperCase) allowedChars.push(upperCasedCharacters);
+  if (includeLowerCase) allowedChars.push(lowerCasedCharacters);
+  if (includeNumbers) allowedChars.push(numericCharacters);
+  if (includeSpecialChars) allowedChars.push(specialCharacters);
+
+  // Add at least one character from each character set
+  allowedChars.forEach(charSet => {
+    const randomChar = charSet[Math.floor(Math.random() * charSet.length)];
+    password += randomChar;
+
+    // Update the corresponding flag
+    if (charSet === upperCasedCharacters) usedUpperCase = true;
+    if (charSet === lowerCasedCharacters) usedLowerCase = true;
+    if (charSet === numericCharacters) usedNumbers = true;
+    if (charSet === specialCharacters) usedSpecialChars = true;
+  });
+
+  // Add remaining characters randomly
+  const remainingLength = length - allowedChars.length;
+  for (let i = 0; i < remainingLength; i++) {
+    // Concatenate characters randomly from all character sets
+    const randomCharSet = allowedChars[Math.floor(Math.random() * allowedChars.length)];
+    const randomChar = randomCharSet[Math.floor(Math.random() * randomCharSet.length)];
+    password += randomChar;
+  }
+
+  // Shuffle the password to make it more random
+  password = shuffleString(password);
+
   return password;
 }
 
+// Function to shuffle a string
+function shuffleString(str) {
+  const array = str.split('');
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array.join('');
+}
+
 function copyPassword() {
-  password.select();
-  document.execCommand("copy")
-  alert("Copied to clipboard");
+  const passwordInput = document.getElementById('password');
+  passwordInput.select();
+
+  try {
+    const successful = document.execCommand('copy');
+    if (successful) {
+      alert('Password copied to clipboard');
+    } else {
+      alert('Failed to copy password to clipboard');
+    }
+  } catch (err) {
+    console.error('Unable to copy password:', err);
+    alert('Unable to copy password. Please try again or copy it manually.');
+  }
 }

@@ -17,7 +17,7 @@ This is my portfolio page project. In this iteration of the project, I showed my
 * Web APIs and 
 * External APIs
 
-To acheive a professional look that shows:
+To achieve a professional look that shows:
 
 * Responsiveness
 * Advanced CSS Positioning and Layout
@@ -93,7 +93,7 @@ Here is a screenshot of the password generator:
 
 ## Technologies Used
 
-All the code in this repository was edited using Microsoft's Visual Studio Code Editor (VS Code). The GitHub repository was managed using Apple MacBook's Terminal Application
+All the projects in this repository were created using Microsoft's Visual Studio Code Editor (VS Code). The GitHub repository was managed using Apple MacBook's Terminal Application
 
 ## License
 
